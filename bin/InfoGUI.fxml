@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUIController">
+   <children>
+      <Pane prefHeight="200.0" prefWidth="300.0">
+         <children>
+            <VBox prefHeight="200.0" prefWidth="150.0">
+               <children>
+                  <Text fill="RED" strokeType="OUTSIDE" strokeWidth="0.0" text="Salary w/o extra hours:" textAlignment="CENTER" underline="true" wrappingWidth="150.0" />
+                  <Text fill="#3505f4" layoutX="10.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Total hours:" textAlignment="CENTER" underline="true" wrappingWidth="150.0" />
+                  <Text fill="RED" layoutX="10.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Total extra hours:" textAlignment="CENTER" underline="true" wrappingWidth="150.0" />
+                  <Text fill="#3505f4" layoutX="10.0" layoutY="57.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sick days earned:" textAlignment="CENTER" underline="true" wrappingWidth="150.0" />
+                  <Text fill="RED" layoutX="10.0" layoutY="74.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Vacation days earned:" textAlignment="CENTER" underline="true" wrappingWidth="150.0" />
+               </children>
+            </VBox>
+            <VBox layoutX="150.0" prefHeight="200.0" prefWidth="150.0">
+               <children>
+                  <Text fx:id="salaryWOE" fill="RED" strokeType="OUTSIDE" strokeWidth="0.0" text="0" underline="true" wrappingWidth="150.0" />
+                  <Text fx:id="totalHours" fill="#3505f4" layoutX="10.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" underline="true" wrappingWidth="150.0" />
+                  <Text fx:id="totalEH" fill="RED" layoutX="10.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" underline="true" wrappingWidth="150.0" />
+                  <Text fx:id="sickDays" fill="#3505f4" layoutX="10.0" layoutY="57.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" underline="true" wrappingWidth="150.0" />
+                  <Text fx:id="vacDays" fill="RED" layoutX="10.0" layoutY="71.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" underline="true" wrappingWidth="150.0" />
+               </children>
+            </VBox>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

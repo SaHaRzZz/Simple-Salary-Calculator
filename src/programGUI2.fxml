@@ -1,0 +1,600 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="425.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUIController">
+   <children>
+      <Pane prefHeight="425.0" prefWidth="500.0">
+         <children>
+            <MenuBar prefHeight="25.0" prefWidth="200.0">
+              <menus>
+                <Menu mnemonicParsing="false" text="File">
+                  <items>
+                    <MenuItem mnemonicParsing="false" onAction="#openReport" text="Open report" />
+                        <MenuItem mnemonicParsing="false" onAction="#saveReport" text="Save report" />
+                        <MenuItem mnemonicParsing="false" text="\@Sahar Hayun" />
+                  </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Edit">
+                  <items>
+                        <MenuItem mnemonicParsing="false" onAction="#openSalary" text="Edit salary" />
+                    <MenuItem mnemonicParsing="false" onAction="#resetValues" text="Reset values" />
+                        <MenuItem mnemonicParsing="false" text="\@Sahar Hayun" />
+                  </items>
+                </Menu>
+              </menus>
+            </MenuBar>
+            <HBox layoutY="23.0" prefHeight="400.0" prefWidth="200.0">
+               <children>
+                  <VBox prefHeight="200.0" prefWidth="100.0">
+                     <children>
+                        <HBox prefHeight="23.0" prefWidth="100.0">
+                           <children>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="1h" textAlignment="CENTER" translateY="3.0" wrappingWidth="20.0">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </Text>
+                              <TextField fx:id="in1" prefWidth="30.0" text="0" />
+                              <Text layoutX="10.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1m" textAlignment="CENTER" translateY="3.0" wrappingWidth="20.0">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </Text>
+                              <TextField fx:id="out1" layoutX="30.0" layoutY="10.0" prefWidth="30.0" text="0" />
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="23.0" prefWidth="100.0">
+                           <children>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="2h" textAlignment="CENTER" wrappingWidth="20.0">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </Text>
+                              <TextField fx:id="in2" prefWidth="30.0" text="0" />
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="2m" textAlignment="CENTER" wrappingWidth="20.0">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </Text>
+                              <TextField fx:id="out2" prefWidth="30.0" text="0" />
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="23.0" prefWidth="100.0">
+                           <children>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="3h" textAlignment="CENTER" wrappingWidth="20.0">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </Text>
+                              <TextField fx:id="in3" prefWidth="30.0" text="0" />
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="3m" textAlignment="CENTER" wrappingWidth="20.0">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </Text>
+                              <TextField fx:id="out3" prefWidth="30.0" text="0" />
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="23.0" prefWidth="100.0">
+                           <children>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="4h" textAlignment="CENTER" wrappingWidth="20.0">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </Text>
+                              <TextField fx:id="in4" prefWidth="30.0" text="0" />
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="4m" textAlignment="CENTER" wrappingWidth="20.0">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </Text>
+                              <TextField fx:id="out4" prefWidth="30.0" text="0" />
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="23.0" prefWidth="100.0">
+                           <children>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="5h" textAlignment="CENTER" wrappingWidth="20.0">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </Text>
+                              <TextField fx:id="in5" prefWidth="30.0" text="0" />
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="5m" textAlignment="CENTER" wrappingWidth="20.0">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </Text>
+                              <TextField fx:id="out5" prefWidth="30.0" text="0" />
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="23.0" prefWidth="100.0">
+                           <children>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="6h" textAlignment="CENTER" wrappingWidth="20.0">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </Text>
+                              <TextField fx:id="in6" prefWidth="30.0" text="0" />
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="6m" textAlignment="CENTER" wrappingWidth="20.0">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </Text>
+                              <TextField fx:id="out6" prefWidth="30.0" text="0" />
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="23.0" prefWidth="100.0">
+                           <children>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="7h" textAlignment="CENTER" wrappingWidth="20.0">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </Text>
+                              <TextField fx:id="in7" prefWidth="30.0" text="0" />
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="7m" textAlignment="CENTER" wrappingWidth="20.0">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </Text>
+                              <TextField fx:id="out7" prefWidth="30.0" text="0" />
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="23.0" prefWidth="100.0">
+                           <children>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="8h" textAlignment="CENTER" wrappingWidth="20.0">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </Text>
+                              <TextField fx:id="in8" prefWidth="30.0" text="0" />
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="8m" textAlignment="CENTER" wrappingWidth="20.0">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </Text>
+                              <TextField fx:id="out8" prefWidth="30.0" text="0" />
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="23.0" prefWidth="100.0">
+                           <children>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="9h" textAlignment="CENTER" wrappingWidth="20.0">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </Text>
+                              <TextField fx:id="in9" prefWidth="30.0" text="0" />
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="9m" textAlignment="CENTER" wrappingWidth="20.0">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </Text>
+                              <TextField fx:id="out9" prefWidth="30.0" text="0" />
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="23.0" prefWidth="100.0">
+                           <children>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="10h" textAlignment="CENTER" wrappingWidth="20.0">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </Text>
+                              <TextField fx:id="in10" prefWidth="30.0" text="0" />
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="10m" textAlignment="CENTER" wrappingWidth="20.0">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </Text>
+                              <TextField fx:id="out10" prefWidth="30.0" text="0" />
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="23.0" prefWidth="100.0">
+                           <children>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="11h" textAlignment="CENTER" wrappingWidth="20.0">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </Text>
+                              <TextField fx:id="in11" prefWidth="30.0" text="0" />
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="11m" textAlignment="CENTER" wrappingWidth="20.0">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </Text>
+                              <TextField fx:id="out11" prefWidth="30.0" text="0" />
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="23.0" prefWidth="100.0">
+                           <children>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="12h" textAlignment="CENTER" wrappingWidth="20.0">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </Text>
+                              <TextField fx:id="in12" prefWidth="30.0" text="0" />
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="12m" textAlignment="CENTER" wrappingWidth="20.0">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </Text>
+                              <TextField fx:id="out12" prefWidth="30.0" text="0" />
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="23.0" prefWidth="100.0">
+                           <children>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="13h" textAlignment="CENTER" wrappingWidth="20.0">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </Text>
+                              <TextField fx:id="in13" prefWidth="30.0" text="0" />
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="13m" textAlignment="CENTER" wrappingWidth="20.0">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </Text>
+                              <TextField fx:id="out13" prefWidth="30.0" text="0" />
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="23.0" prefWidth="100.0">
+                           <children>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="14h" textAlignment="CENTER" wrappingWidth="20.0">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </Text>
+                              <TextField fx:id="in14" prefWidth="30.0" text="0" />
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="14m" textAlignment="CENTER" wrappingWidth="20.0">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </Text>
+                              <TextField fx:id="out14" prefWidth="30.0" text="0" />
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="23.0" prefWidth="100.0">
+                           <children>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="15h" textAlignment="CENTER" wrappingWidth="20.0">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </Text>
+                              <TextField fx:id="in15" prefWidth="30.0" text="0" />
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="15m" textAlignment="CENTER" wrappingWidth="20.0">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </Text>
+                              <TextField fx:id="out15" prefWidth="30.0" text="0" />
+                           </children>
+                        </HBox>
+                        <HBox layoutX="10.0" layoutY="332.0" prefHeight="23.0" prefWidth="100.0">
+                           <children>
+                              <Button mnemonicParsing="false" onAction="#calculateButton" text="\$" />
+                              <TextField fx:id="nameText" promptText="Name">
+                                 <font>
+                                    <Font size="9.0" />
+                                 </font>
+                              </TextField>
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+                  <VBox layoutX="10.0" layoutY="10.0" prefHeight="200.0" prefWidth="100.0">
+                     <children>
+                        <HBox prefHeight="23.0" prefWidth="100.0">
+                           <children>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="16h" textAlignment="CENTER" wrappingWidth="20.0">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </Text>
+                              <TextField fx:id="in16" prefWidth="30.0" text="0" />
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="16m" textAlignment="CENTER" wrappingWidth="20.0">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </Text>
+                              <TextField fx:id="out16" prefWidth="30.0" text="0" />
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="23.0" prefWidth="100.0">
+                           <children>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="17h" textAlignment="CENTER" wrappingWidth="20.0">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </Text>
+                              <TextField fx:id="in17" prefWidth="30.0" text="0" />
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="17m" textAlignment="CENTER" wrappingWidth="20.0">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </Text>
+                              <TextField fx:id="out17" prefWidth="30.0" text="0" />
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="23.0" prefWidth="100.0">
+                           <children>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="18h" textAlignment="CENTER" wrappingWidth="20.0">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </Text>
+                              <TextField fx:id="in18" prefWidth="30.0" text="0" />
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="18m" textAlignment="CENTER" wrappingWidth="20.0">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </Text>
+                              <TextField fx:id="out18" prefWidth="30.0" text="0" />
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="23.0" prefWidth="100.0">
+                           <children>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="19h" textAlignment="CENTER" wrappingWidth="20.0">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </Text>
+                              <TextField fx:id="in19" prefWidth="30.0" text="0" />
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="19m" textAlignment="CENTER" wrappingWidth="20.0">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </Text>
+                              <TextField fx:id="out19" prefWidth="30.0" text="0" />
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="23.0" prefWidth="100.0">
+                           <children>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="20h" textAlignment="CENTER" wrappingWidth="20.0">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </Text>
+                              <TextField fx:id="in20" prefWidth="30.0" text="0" />
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="20m" textAlignment="CENTER" wrappingWidth="20.0">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </Text>
+                              <TextField fx:id="out20" prefWidth="30.0" text="0" />
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="23.0" prefWidth="100.0">
+                           <children>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="21h" textAlignment="CENTER" wrappingWidth="20.0">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </Text>
+                              <TextField fx:id="in21" prefWidth="30.0" text="0" />
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="21m" textAlignment="CENTER" wrappingWidth="20.0">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </Text>
+                              <TextField fx:id="out21" prefWidth="30.0" text="0" />
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="23.0" prefWidth="100.0">
+                           <children>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="22h" textAlignment="CENTER" wrappingWidth="20.0">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </Text>
+                              <TextField fx:id="in22" prefWidth="30.0" text="0" />
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="22m" textAlignment="CENTER" wrappingWidth="20.0">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </Text>
+                              <TextField fx:id="out22" prefWidth="30.0" text="0" />
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="23.0" prefWidth="100.0">
+                           <children>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="23h" textAlignment="CENTER" wrappingWidth="20.0">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </Text>
+                              <TextField fx:id="in23" prefWidth="30.0" text="0" />
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="23m" textAlignment="CENTER" wrappingWidth="20.0">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </Text>
+                              <TextField fx:id="out23" prefWidth="30.0" text="0" />
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="23.0" prefWidth="100.0">
+                           <children>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="24h" textAlignment="CENTER" wrappingWidth="20.0">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </Text>
+                              <TextField fx:id="in24" prefWidth="30.0" text="0" />
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="24m" textAlignment="CENTER" wrappingWidth="20.0">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </Text>
+                              <TextField fx:id="out24" prefWidth="30.0" text="0" />
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="23.0" prefWidth="100.0">
+                           <children>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="25h" textAlignment="CENTER" wrappingWidth="20.0">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </Text>
+                              <TextField fx:id="in25" prefWidth="30.0" text="0" />
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="25m" textAlignment="CENTER" wrappingWidth="20.0">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </Text>
+                              <TextField fx:id="out25" prefWidth="30.0" text="0" />
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="23.0" prefWidth="100.0">
+                           <children>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="26h" textAlignment="CENTER" wrappingWidth="20.0">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </Text>
+                              <TextField fx:id="in26" prefWidth="30.0" text="0" />
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="26m" textAlignment="CENTER" wrappingWidth="20.0">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </Text>
+                              <TextField fx:id="out26" prefWidth="30.0" text="0" />
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="23.0" prefWidth="100.0">
+                           <children>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="27h" textAlignment="CENTER" wrappingWidth="20.0">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </Text>
+                              <TextField fx:id="in27" prefWidth="30.0" text="0" />
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="27m" textAlignment="CENTER" wrappingWidth="20.0">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </Text>
+                              <TextField fx:id="out27" prefWidth="30.0" text="0" />
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="23.0" prefWidth="100.0">
+                           <children>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="28h" textAlignment="CENTER" wrappingWidth="20.0">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </Text>
+                              <TextField fx:id="in28" prefWidth="30.0" text="0" />
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="28m" textAlignment="CENTER" wrappingWidth="20.0">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </Text>
+                              <TextField fx:id="out28" prefWidth="30.0" text="0" />
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="23.0" prefWidth="100.0">
+                           <children>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="29h" textAlignment="CENTER" wrappingWidth="20.0">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </Text>
+                              <TextField fx:id="in29" prefWidth="30.0" text="0" />
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="29m" textAlignment="CENTER" wrappingWidth="20.0">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </Text>
+                              <TextField fx:id="out29" prefWidth="30.0" text="0" />
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="23.0" prefWidth="100.0">
+                           <children>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="30h" textAlignment="CENTER" wrappingWidth="20.0">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </Text>
+                              <TextField fx:id="in30" prefWidth="30.0" text="0" />
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="30m" textAlignment="CENTER" wrappingWidth="20.0">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </Text>
+                              <TextField fx:id="out30" prefWidth="30.0" text="0" />
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="23.0" prefWidth="100.0">
+                           <children>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="31h" textAlignment="CENTER" wrappingWidth="20.0">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </Text>
+                              <TextField fx:id="in31" prefWidth="30.0" text="0" />
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="31m" textAlignment="CENTER" wrappingWidth="20.0">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </Text>
+                              <TextField fx:id="out31" prefWidth="30.0" text="0" />
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+            <VBox layoutX="200.0" prefHeight="348.0" prefWidth="150.0">
+               <children>
+                  <Text fill="RED" layoutX="10.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Total days:" underline="true" wrappingWidth="150.0" />
+                  <Text fill="#3505f4" layoutX="10.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Total hours:" underline="true" wrappingWidth="150.0" />
+                  <Text fill="RED" layoutX="10.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Total extra hours:" underline="true" wrappingWidth="150.0" />
+                  <Text fill="#3505f4" layoutX="10.0" layoutY="72.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Total hours(100%):" underline="true" />
+                  <Text fill="RED" layoutX="10.0" layoutY="73.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Total hours(125%):" underline="true" />
+                  <Text fill="#3505f4" layoutX="10.0" layoutY="90.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Total hours(150%):" underline="true" />
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" />
+                  <Text fill="RED" strokeType="OUTSIDE" strokeWidth="0.0" text="Salary per hour(100%):" underline="true" />
+                  <Text fill="#3505f4" layoutX="10.0" layoutY="56.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Salary per hour(125%)" underline="true" />
+                  <Text fill="RED" strokeType="OUTSIDE" strokeWidth="0.0" text="Salary per hour(150%)" underline="true" />
+                  <Text layoutX="10.0" layoutY="90.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+                  <Text fill="#3505f4" layoutX="10.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Salary with extra hours:" underline="true" wrappingWidth="150.0" />
+                  <Text fill="RED" strokeType="OUTSIDE" strokeWidth="0.0" text="Salary without extra hours:" underline="true" wrappingWidth="150.0" />
+                  <Text layoutX="10.0" layoutY="188.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+                  <Text fill="#3505f4" layoutX="10.0" layoutY="57.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sick days earned:" underline="true" wrappingWidth="150.0" />
+                  <Text fill="RED" layoutX="10.0" layoutY="74.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Vacation days earned:" underline="true" wrappingWidth="150.0" />
+                  <Text fill="#3505f4" layoutX="10.0" layoutY="135.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Average hours per day:" underline="true" wrappingWidth="150.0" />
+               </children>
+            </VBox>
+            <VBox layoutX="350.0" prefHeight="260.0" prefWidth="150.0">
+               <children>
+                  <Text fx:id="totalDays" fill="RED" layoutX="10.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" underline="true" wrappingWidth="150.0" />
+                  <Text fx:id="totalHours" fill="#3505f4" layoutX="10.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" underline="true" wrappingWidth="150.0" />
+                  <Text fx:id="totalEH" fill="RED" layoutX="10.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" underline="true" wrappingWidth="150.0" />
+                  <Text fx:id="totalEH100" fill="#3505f4" layoutX="10.0" layoutY="74.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" underline="true" />
+                  <Text fx:id="totalEH125" fill="RED" strokeType="OUTSIDE" strokeWidth="0.0" text="0" underline="true" />
+                  <Text fx:id="totalEH150" fill="#3505f4" layoutX="10.0" layoutY="90.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" underline="true" />
+                  <Text layoutX="10.0" layoutY="74.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+                  <Text fx:id="salaryInfo" fill="RED" strokeType="OUTSIDE" strokeWidth="0.0" text="0" underline="true" />
+                  <Text fx:id="salaryInfo125" fill="#3505f4" strokeType="OUTSIDE" strokeWidth="0.0" text="0" underline="true" />
+                  <Text fx:id="salaryInfo150" fill="RED" layoutX="10.0" layoutY="106.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" underline="true" />
+                  <Text layoutX="10.0" layoutY="90.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+                  <Text fx:id="salaryText" fill="#3505f4" strokeType="OUTSIDE" strokeWidth="0.0" text="0" underline="true" wrappingWidth="130.13671875" />
+                  <Text fx:id="salaryWOE" fill="RED" strokeType="OUTSIDE" strokeWidth="0.0" text="0" underline="true" wrappingWidth="150.0" />
+                  <Text layoutX="10.0" layoutY="106.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+                  <Text fx:id="sickDays" fill="#3505f4" layoutX="10.0" layoutY="57.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" underline="true" wrappingWidth="150.0" />
+                  <Text fx:id="vacDays" fill="RED" layoutX="10.0" layoutY="71.0" strokeType="OUTSIDE" strokeWidth="0.0" text="?" underline="true" wrappingWidth="150.0" />
+                  <Text fx:id="avgDaysText" fill="#3505f4" layoutX="10.0" layoutY="142.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" underline="true" wrappingWidth="150.0" />
+               </children>
+            </VBox>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
